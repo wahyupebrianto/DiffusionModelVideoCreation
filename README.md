@@ -111,6 +111,10 @@ ffmpeg -i video.mp4 -i music.mp3 -shortest -c:v copy -c:a aac final_with_music.m
 - video
 ffmpeg -framerate 8 -i swirling_galaxyframe_%05d.png -c:v libx264 -pix_fmt yuv420p video.mp4
 
+ffmpeg -framerate 7.41 -i swirling_galaxy/frame%06d.png -c:v libx264 -preset slow -crf 17 -pix_fmt yuv420p output_video.mp4
+
+ffmpeg -i output_video.mp4 -i Voyager.mp3 -shortest -c:v copy -c:a aac final.mp4
+
 
 - Prompt
 a dreamy vision of an astronaut adrift in the cosmos, mesmerized by the glowing Earth below and the infinite stars above, ethereal, surreal, cosmic art, nebula colors, peaceful and profound
