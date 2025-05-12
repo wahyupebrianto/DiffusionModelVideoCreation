@@ -20,7 +20,7 @@ Proyek ini menggunakan [Stable Diffusion v1-4](https://huggingface.co/CompVis/st
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/username/namarepo.git
+git clone https://github.com/wahyupebrianto/DiffusionModelVideoCreation.git
 cd namarepo
 ```
 
@@ -56,7 +56,6 @@ ffmpeg -framerate 10 -i outputs/forestdream/frame%05d.jpg -c:v libx264 -pix_fmt 
 ffmpeg -i video.mp4 -i music.mp3 -shortest -c:v copy -c:a aac final_with_music.mp4
 ```
 
-### 7. Upload manual ke YouTube
 
 ---
 
